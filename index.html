@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moduro AI Platform - Free AI Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
+            color: #E5E7EB;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1A1A1A 0%, #2D1B69 100%);
+            border-bottom: 1px solid #374151;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #8B5CF6;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+        }
+
+        .tabs {
+            display: flex;
+            background: linear-gradient(135deg, #1A1A1A 0%, #2D1B69 100%);
+            border-bottom: 1px solid #374151;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 1rem;
+            background: transparent;
+            border: none;
+            color: #9CA3AF;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .tab.active {
+            color: #8B5CF6;
+            border-bottom: 3px solid #8B5CF6;
+        }
+
+        .tab:hover {
+            background: rgba(139, 92, 246, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .content {
+            background: linear-gradient(135deg, #1A1A1A 0%, #2D1B69 100%);
+            border: 1px solid #374151;
+            border-radius: 8px;
+            padding: 2rem;
+            min-height: 600px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .card {
+            background: #0A0A0A;
+            border: 1px solid #374151;
+            border-radius: 8px;
+            padding: 1.5rem;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card h3 {
+            color: #8B5CF6;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .upload-area {
+            flex: 1;
+            border: 2px dashed #374151;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .upload-area:hover {
+            border-color: #8B5CF6;
+            background: rgba(139, 92, 246, 0.05);
+        }
+
+        .upload-area.dragover {
+            border-color: #8B5CF6;
+            background: rgba(139, 92, 246, 0.1);
+        }
+
+        .code-editor {
+            width: 100%;
+            height: 300px;
+            background: #0A0A0A;
+            border: 1px solid #374151;
+            border-radius: 8px;
+            color: #E5E7EB;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            padding: 1rem;
+            resize: vertical;
+        }
+
+        .code-editor:focus {
+            outline: none;
+            border-color: #8B5CF6;
+            box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+        }
+
+        .button {
+            background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+        }
+
+        .button:hover {
+            background: linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%);
+            box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
+        }
+
+        .button:disabled {
+            background: #374151;
+            color: #9CA3AF;
+            cursor: not-allowed;
+        }
+
+        .button.outline {
+            background: transparent;
+            border: 1px solid #8B5CF6;
+            color: #8B5CF6;
+        }
+
+        .button.outline:hover {
+            background: rgba(139, 92, 246, 0.1);
+            border-color: #A78BFA;
+        }
+
+        .chat-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            height: 600px;
+        }
+
+        .chat-messages {
+            background: #0A0A0A;
+            border: 1px solid #374151;
+            border-radius: 8px;
+            padding: 1rem;
+            overflow-y: auto;
+            height: 500px;
+        }
+
+        .message {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            max-width: 80%;
+        }
+
+        .message.user {
+            background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+            margin-left: auto;
+        }
+
+        .message.ai {
+            background: linear-gradient(135deg, #1A1A1A 0%, #2D1B69 100%);
+            border: 1px solid #EC4899;
+        }
+
+        .chat-input {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .chat-input input {
+            flex: 1;
+            background: #0A0A0A;
+            border: 1px solid #374151;
+            border-radius: 8px;
+            color: #E5E7EB;
+            padding: 0.75rem;
+        }
+
+        .chat-input input:focus {
+            outline: none;
+            border-color: #8B5CF6;
+            box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+        }
+
+        .status {
+            background: #0A0A0A;
+            border: 1px solid #374151;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .chip {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.2);
+            color: #8B5CF6;
+            border: 1px solid #8B5CF6;
+            border-radius: 16px;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.875rem;
+            margin: 0.25rem;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #8B5CF6;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid #EF4444;
+            color: #EF4444;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .success {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid #10B981;
+            color: #10B981;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🚀 Moduro AI Platform</div>
+        <div>Free AI Development Platform</div>
+    </div>
+
+    <div class="tabs">
+        <button class="tab active" onclick="switchTab(0)">📊 Data Analysis</button>
+        <button class="tab" onclick="switchTab(1)">🐍 Code Editor</button>
+        <button class="tab" onclick="switchTab(2)">🤖 AI Assistant</button>
+    </div>
+
+    <div class="container">
+        <!-- Data Analysis Tab -->
+        <div id="tab-0" class="content">
+            <div class="grid">
+                <div class="card">
+                    <h3>📤 Data Upload & Analysis</h3>
+                    <div id="upload-area" class="upload-area" onclick="document.getElementById('file-input').click()">
+                        <div style="font-size: 3rem; color: #8B5CF6; margin-bottom: 1rem;">📁</div>
+                        <div style="font-size: 1.25rem; color: #E5E7EB; margin-bottom: 0.5rem;">Drop your data file here</div>
+                        <div style="color: #9CA3AF; text-align: center;">Supports JSON and CSV files</div>
+                    </div>
+                    <input id="file-input" type="file" accept=".json,.csv" style="display: none;" onchange="handleFileUpload(event)">
+                    <div id="data-status"></div>
+                </div>
+
+                <div class="card">
+                    <h3>📈 Analysis Results</h3>
+                    <div id="analysis-results">
+                        <div style="color: #9CA3AF; text-align: center; margin-top: 2rem;">
+                            Upload and expand data to see analysis results
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code Editor Tab -->
+        <div id="tab-1" class="content hidden">
+            <div class="grid">
+                <div class="card">
+                    <h3>🐍 Python Code Editor</h3>
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                        <button class="button outline" onclick="analyzeCode()">Analyze</button>
+                        <button class="button" onclick="expandCode()">Expand</button>
+                    </div>
+                    <textarea id="code-editor" class="code-editor" placeholder="Enter your Python code here...">def calculate_sum(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+def process_data(data):
+    result = []
+    for item in data:
+        if item > 0:
+            result.append(item * 2)
+    return result</textarea>
+                </div>
+
+                <div class="card">
+                    <h3>📊 Analysis & Expansion Results</h3>
+                    <div id="code-results">
+                        <div style="color: #9CA3AF; text-align: center; margin-top: 2rem;">
+                            Write code and click Analyze or Expand to see results
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Assistant Tab -->
+        <div id="tab-2" class="content hidden">
+            <div class="chat-container">
+                <div>
+                    <h3>💬 AI Assistant</h3>
+                    <div id="chat-messages" class="chat-messages">
+                        <div class="message ai">
+                            <strong>AI Assistant:</strong> Hello! I'm your AI assistant for the Moduro platform. I can help you with data analysis, code expansion, and provide insights about your work. What would you like to do?
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input id="chat-input" type="text" placeholder="Ask me about data analysis, code expansion, or functions..." onkeypress="handleChatKeyPress(event)">
+                        <button class="button" onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+
+                <div class="status">
+                    <h3>📊 Platform Status</h3>
+                    <div style="margin-bottom: 1rem;">
+                        <div style="color: #EC4899; font-weight: 600; margin-bottom: 0.5rem;">Quick Actions</div>
+                        <button class="button outline" style="width: 100%; margin: 0.25rem 0;" onclick="quickAction('analyze')">Analyze Data</button>
+                        <button class="button outline" style="width: 100%; margin: 0.25rem 0;" onclick="quickAction('metrics')">Code Metrics</button>
+                        <button class="button outline" style="width: 100%; margin: 0.25rem 0;" onclick="quickAction('stats')">Platform Stats</button>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <div style="color: #EC4899; font-weight: 600; margin-bottom: 0.5rem;">Current Status</div>
+                        <div id="status-chips"></div>
+                    </div>
+                    <div>
+                        <div style="color: #EC4899; font-weight: 600; margin-bottom: 0.5rem;">Platform Metrics</div>
+                        <div style="color: #9CA3AF; font-size: 0.875rem;">
+                            <div>Lines Analyzed: <span id="lines-analyzed">0</span></div>
+                            <div>Characters Analyzed: <span id="chars-analyzed">0</span></div>
+                            <div>Total Expansions: <span id="total-expansions">0</span></div>
+                            <div>Avg Expansion Rate: <span id="avg-expansion">0</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global state
+        let currentTab = 0;
+        let data = [];
+        let analysisResults = null;
+        let expanded = null;
+        let codeAnalysis = null;
+        let expandedCode = null;
+        let codeMetrics = null;
+        let functionResults = {};
+        let messages = [
+            { user: false, text: "Hello! I'm your AI assistant for the Moduro platform. I can help you with data analysis, code expansion, and provide insights about your work. What would you like to do?", timestamp: new Date() }
+        ];
+        let totalLinesAnalyzed = 0;
+        let totalCharactersAnalyzed = 0;
+        let totalExpansions = 0;
+
+        // Tab switching
+        function switchTab(tabIndex) {
+            currentTab = tabIndex;
+            
+            // Update tab buttons
+            document.querySelectorAll('.tab').forEach((tab, index) => {
+                tab.classList.toggle('active', index === tabIndex);
+            });
+            
+            // Show/hide content
+            document.querySelectorAll('.content').forEach((content, index) => {
+                content.classList.toggle('hidden', index !== tabIndex);
+            });
+        }
+
+        // File upload handling
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const content = e.target.result;
+                    let parsedData;
+                    
+                    if (file.name.endsWith('.json')) {
+                        parsedData = JSON.parse(content);
+                    } else if (file.name.endsWith('.csv')) {
+                        const lines = content.split('\n');
+                        const headers = lines[0].split(',');
+                        parsedData = lines.slice(1).map(line => {
+                            const values = line.split(',');
+                            return headers.reduce((obj, header, index) => {
+                                obj[header.trim()] = values[index]?.trim() || '';
+                                return obj;
+                            }, {});
+                        });
+                    } else {
+                        throw new Error('Unsupported file format. Please use JSON or CSV files.');
+                    }
+                    
+                    data = parsedData;
+                    updateDataStatus();
+                    addMessage(false, `Data loaded successfully with ${parsedData.length} records. You can now analyze and expand this data.`);
+                } catch (error) {
+                    showError(`Error parsing file: ${error.message}`);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        // Drag and drop handling
+        const uploadArea = document.getElementById('upload-area');
+        
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+        
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            
+            if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+                const file = e.dataTransfer.files[0];
+                const event = { target: { files: [file] } };
+                handleFileUpload(event);
+            }
+        });
+
+        function updateDataStatus() {
+            const statusDiv = document.getElementById('data-status');
+            if (data.length > 0) {
+                statusDiv.innerHTML = `
+                    <div style="margin-top: 1rem;">
+                        <div style="color: #EC4899; font-weight: 600; margin-bottom: 0.5rem;">Data Status</div>
+                        <span class="chip">📊 ${data.length} records loaded</span>
+                        <button class="button" onclick="expandData()">Expand Data</button>
+                    </div>
+                `;
+            } else {
+                statusDiv.innerHTML = '';
+            }
+        }
+
+        // Code analysis and expansion
+        function analyzeCode() {
+            const code = document.getElementById('code-editor').value;
+            if (!code.trim()) return;
+
+            showLoading('code-results', 'Analyzing code...');
+            
+            // Simulate API call
+            setTimeout(() => {
+                const analysis = {
+                    modular_score: Math.floor(Math.random() * 100),
+                    functions: [
+                        { name: 'calculate_sum', line: 1, args: 1, has_docstring: false, has_type_hints: false },
+                        { name: 'process_data', line: 6, args: 1, has_docstring: false, has_type_hints: false }
+                    ],
+                    suggestions: [
+                        { type: 'docstrings', message: 'Add docstrings to functions', line: 1 },
+                        { type: 'type_hints', message: 'Add type hints for better code clarity', line: 1 }
+                    ]
+                };
+                
+                codeAnalysis = analysis;
+                displayCodeResults(analysis);
+            }, 1000);
+        }
+
+        function expandCode() {
+            const code = document.getElementById('code-editor').value;
+            if (!code.trim()) return;
+
+            showLoading('code-results', 'Expanding code...');
+            
+            // Simulate API call
+            setTimeout(() => {
+                const expanded = `"""
+Enhanced version of the provided code with additional features.
+Generated by Moduro AI Platform.
+"""
+
+${code}
+
+# Additional utility functions
+def validate_input(data):
+    """Validate input data."""
+    if not data:
+        raise ValueError("Data cannot be empty")
+    return True
+
+def process_result(result):
+    """Process and format the result."""
+    if isinstance(result, (list, tuple)):
+        return [str(item) for item in result]
+    return str(result)
+
+# Error handling wrapper
+def safe_execute(func, *args, **kwargs):
+    """Safely execute a function with error handling."""
+    try:
+        return func(*args, **kwargs)
+    except Exception as exc:
+        print(f"Error executing {func.__name__}: {exc}")
+        return None`;
+
+                const metrics = {
+                    lines_added: 15,
+                    chars_added: 450,
+                    expansion_percentage: 75,
+                    char_expansion_percentage: 60
+                };
+                
+                expandedCode = expanded;
+                codeMetrics = metrics;
+                totalLinesAnalyzed += code.split('\n').length;
+                totalCharactersAnalyzed += code.length;
+                totalExpansions++;
+                
+                displayCodeResults(null, expanded, metrics);
+                updateMetrics();
+            }, 1500);
+        }
+
+        function displayCodeResults(analysis, expanded, metrics) {
+            const resultsDiv = document.getElementById('code-results');
+            
+            let html = '';
+            
+            if (metrics) {
+                html += `
+                    <div style="background: rgba(139, 92, 246, 0.1); border: 1px solid #8B5CF6; border-radius: 8px; padding: 1rem; margin-bottom: 1rem;">
+                        <h4 style="color: #8B5CF6; margin-bottom: 1rem;">📊 Code Expansion Metrics</h4>
+                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; text-align: center;">
+                            <div>
+                                <div style="font-size: 1.5rem; font-weight: bold; color: #8B5CF6;">+${metrics.lines_added}</div>
+                                <div style="color: #9CA3AF; font-size: 0.875rem;">Lines Added</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.5rem; font-weight: bold; color: #EC4899;">+${metrics.chars_added}</div>
+                                <div style="color: #9CA3AF; font-size: 0.875rem;">Characters Added</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.5rem; font-weight: bold; color: #10B981;">${metrics.expansion_percentage}%</div>
+                                <div style="color: #9CA3AF; font-size: 0.875rem;">Line Expansion</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.5rem; font-weight: bold; color: #F59E0B;">${metrics.char_expansion_percentage}%</div>
+                                <div style="color: #9CA3AF; font-size: 0.875rem;">Char Expansion</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            if (analysis) {
+                html += `
+                    <div style="background: rgba(139, 92, 246, 0.1); border: 1px solid #8B5CF6; border-radius: 8px; padding: 1rem; margin-bottom: 1rem;">
+                        <h4 style="color: #8B5CF6; margin-bottom: 1rem;">Modularity Score: ${analysis.modular_score}%</h4>
+                        <div style="color: #9CA3AF; margin-bottom: 1rem;">
+                            ${analysis.modular_score >= 70 ? 'Excellent modularity!' : 
+                              analysis.modular_score >= 50 ? 'Good modularity, room for improvement.' : 
+                              'Consider breaking down into smaller, reusable components.'}
+                        </div>
+                        <h5 style="color: #8B5CF6; margin-bottom: 0.5rem;">Functions (${analysis.functions.length})</h5>
+                        <div style="color: #9CA3AF; font-size: 0.875rem;">
+                            ${analysis.functions.map(func => 
+                                `${func.name} • Line ${func.line} • ${func.args} args • ${func.has_docstring ? 'Has docstring' : 'Missing docstring'} • ${func.has_type_hints ? 'Has type hints' : 'No type hints'}`
+                            ).join('<br>')}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            if (expanded) {
+                html += `
+                    <div style="background: rgba(139, 92, 246, 0.1); border: 1px solid #8B5CF6; border-radius: 8px; padding: 1rem;">
+                        <h4 style="color: #8B5CF6; margin-bottom: 1rem;">Expanded Code</h4>
+                        <textarea readonly style="width: 100%; height: 200px; background: #0A0A0A; border: 1px solid #374151; border-radius: 8px; color: #E5E7EB; font-family: monospace; font-size: 12px; padding: 0.5rem;">${expanded}</textarea>
+                    </div>
+                `;
+            }
+            
+            resultsDiv.innerHTML = html;
+        }
+
+        // Chat functionality
+        function handleChatKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+            if (!message) return;
+
+            addMessage(true, message);
+            input.value = '';
+
+            // Simulate AI response
+            setTimeout(() => {
+                const responses = [
+                    "I'm here to help you with data analysis and code expansion!",
+                    "You can upload data for analysis or write Python code for enhancement.",
+                    "The platform supports both data expansion and code analysis features.",
+                    "Try uploading some data or writing code to see the AI in action!",
+                    "I can help analyze your data patterns and suggest improvements."
+                ];
+                
+                const response = responses[Math.floor(Math.random() * responses.length)];
+                addMessage(false, response);
+            }, 1000);
+        }
+
+        function addMessage(user, text) {
+            messages.push({ user, text, timestamp: new Date() });
+            displayMessages();
+        }
+
+        function displayMessages() {
+            const messagesDiv = document.getElementById('chat-messages');
+            messagesDiv.innerHTML = messages.map(msg => `
+                <div class="message ${msg.user ? 'user' : 'ai'}">
+                    <strong>${msg.user ? 'You' : 'AI Assistant'}:</strong> ${msg.text}
+                </div>
+            `).join('');
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        function quickAction(action) {
+            const actions = {
+                'analyze': 'Analyze my data',
+                'metrics': 'Show code metrics',
+                'stats': 'Show platform stats'
+            };
+            
+            addMessage(true, actions[action] || 'Help');
+            
+            setTimeout(() => {
+                const responses = {
+                    'analyze': data.length > 0 ? `I've analyzed your data! Found ${data.length} records. Check the Data Analysis tab for detailed results.` : "I don't see any data loaded. Please upload some data in the Data Analysis tab first.",
+                    'metrics': `Your code has been analyzed with modularity scores and expansion metrics. Check the Code Editor tab for detailed results.`,
+                    'stats': `Platform metrics: ${totalLinesAnalyzed} lines analyzed, ${totalCharactersAnalyzed} characters processed, ${totalExpansions} expansions generated.`
+                };
+                
+                addMessage(false, responses[action] || "I'm here to help! What would you like to do?");
+            }, 1000);
+        }
+
+        function updateMetrics() {
+            document.getElementById('lines-analyzed').textContent = totalLinesAnalyzed;
+            document.getElementById('chars-analyzed').textContent = totalCharactersAnalyzed;
+            document.getElementById('total-expansions').textContent = totalExpansions;
+            document.getElementById('avg-expansion').textContent = totalExpansions > 0 ? Math.round((totalLinesAnalyzed / totalExpansions) * 100) / 100 : 0;
+        }
+
+        function updateStatusChips() {
+            const chipsDiv = document.getElementById('status-chips');
+            let html = '';
+            
+            if (data.length > 0) {
+                html += '<span class="chip">📊 ' + data.length + ' records loaded</span>';
+            }
+            
+            if (Object.keys(functionResults).length > 0) {
+                html += '<span class="chip">⚡ ' + Object.keys(functionResults).length + ' functions executed</span>';
+            }
+            
+            chipsDiv.innerHTML = html;
+        }
+
+        function showLoading(elementId, message) {
+            document.getElementById(elementId).innerHTML = `
+                <div style="text-align: center; padding: 2rem; color: #EC4899;">
+                    <div class="loading" style="margin: 0 auto 1rem;"></div>
+                    ${message}
+                </div>
+            `;
+        }
+
+        function showError(message) {
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error';
+            errorDiv.textContent = message;
+            document.querySelector('.container').insertBefore(errorDiv, document.querySelector('.content'));
+            
+            setTimeout(() => errorDiv.remove(), 5000);
+        }
+
+        function showSuccess(message) {
+            const successDiv = document.createElement('div');
+            successDiv.className = 'success';
+            successDiv.textContent = message;
+            document.querySelector('.container').insertBefore(successDiv, document.querySelector('.content'));
+            
+            setTimeout(() => successDiv.remove(), 5000);
+        }
+
+        // Initialize
+        updateMetrics();
+        updateStatusChips();
+    </script>
+</body>
+</html> 

@@ -1,0 +1,555 @@
+2025-07-06 14:19:58,784 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.94:5000
+2025-07-06 14:19:58,784 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 14:19:58,785 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 14:19:58,978 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 14:19:58,980 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 14:20:11,196 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:20:11] "GET /api/health HTTP/1.1" 200 -
+2025-07-06 14:26:37,567 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gamar\\Downloads\\Ai\\Moduro\\app.py', reloading
+2025-07-06 14:26:37,592 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 14:26:37,758 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 14:26:37,758 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 14:26:37,760 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 14:26:37,760 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 14:26:37,760 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 14:26:37,760 - __main__ - INFO - Debug mode enabled
+2025-07-06 14:26:37,780 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 14:26:37,782 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 14:28:34,832 - __main__ - INFO - Health check requested
+2025-07-06 14:28:34,833 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:28:34] "GET /api/health HTTP/1.1" 200 -
+2025-07-06 14:33:07,822 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 14:33:07,822 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 14:33:07,825 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 14:33:07,825 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 14:33:07,825 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 14:33:07,825 - __main__ - INFO - Debug mode enabled
+2025-07-06 14:33:07,855 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.94:5000
+2025-07-06 14:33:07,855 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 14:33:07,856 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 14:33:08,057 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 14:33:08,057 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 14:33:08,059 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 14:33:08,059 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 14:33:08,059 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 14:33:08,059 - __main__ - INFO - Debug mode enabled
+2025-07-06 14:33:08,079 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 14:33:08,081 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 14:33:16,553 - __main__ - INFO - Health check requested
+2025-07-06 14:33:16,553 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:33:16] "GET /api/health HTTP/1.1" 200 -
+2025-07-06 14:34:04,199 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:34:04] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 14:34:04,200 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:34:04] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 14:34:04,266 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:34:04] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 14:34:04,287 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:34:04] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 14:34:04,458 - __main__ - INFO - Modules request
+2025-07-06 14:34:04,459 - __main__ - INFO - Returning 2 modules
+2025-07-06 14:34:04,459 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:34:04] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 14:34:04,506 - __main__ - INFO - Modules request
+2025-07-06 14:34:04,506 - __main__ - INFO - Returning 2 modules
+2025-07-06 14:34:04,506 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:34:04] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 14:34:04,769 - __main__ - INFO - Modules request
+2025-07-06 14:34:04,769 - __main__ - INFO - Returning 2 modules
+2025-07-06 14:34:04,769 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:34:04] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 14:34:04,810 - __main__ - INFO - Modules request
+2025-07-06 14:34:04,810 - __main__ - INFO - Returning 2 modules
+2025-07-06 14:34:04,810 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:34:04] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 14:34:34,214 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:34:34] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 14:34:34,521 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:34:34] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 14:34:34,522 - __main__ - INFO - Modules request
+2025-07-06 14:34:34,522 - __main__ - INFO - Returning 2 modules
+2025-07-06 14:34:34,522 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:34:34] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 14:34:34,832 - __main__ - INFO - Modules request
+2025-07-06 14:34:34,832 - __main__ - INFO - Returning 2 modules
+2025-07-06 14:34:34,833 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:34:34] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 14:35:04,550 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:04] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 14:35:04,860 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:04] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 14:35:04,860 - __main__ - INFO - Modules request
+2025-07-06 14:35:04,860 - __main__ - INFO - Returning 2 modules
+2025-07-06 14:35:04,860 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:04] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 14:35:05,169 - __main__ - INFO - Modules request
+2025-07-06 14:35:05,169 - __main__ - INFO - Returning 2 modules
+2025-07-06 14:35:05,170 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:05] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 14:35:10,310 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:10] "OPTIONS /api/execute HTTP/1.1" 200 -
+2025-07-06 14:35:10,621 - __main__ - INFO - Function execution requested
+2025-07-06 14:35:10,622 - __main__ - INFO - Executing function: analyze_python with params: {}
+2025-07-06 14:35:10,622 - __main__ - INFO - Function analyze_python executed successfully
+2025-07-06 14:35:10,622 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:10] "POST /api/execute HTTP/1.1" 200 -
+2025-07-06 14:35:14,442 - __main__ - INFO - Function execution requested
+2025-07-06 14:35:14,442 - __main__ - INFO - Executing function: analyze_data with params: {}
+2025-07-06 14:35:14,442 - __main__ - INFO - Function analyze_data executed successfully
+2025-07-06 14:35:14,444 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:14] "POST /api/execute HTTP/1.1" 200 -
+2025-07-06 14:35:16,971 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:16] "OPTIONS /api/execute HTTP/1.1" 200 -
+2025-07-06 14:35:17,234 - __main__ - INFO - Function execution requested
+2025-07-06 14:35:17,235 - __main__ - INFO - Executing function: expand_python with params: {}
+2025-07-06 14:35:17,235 - __main__ - INFO - Function expand_python executed successfully
+2025-07-06 14:35:17,235 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:17] "POST /api/execute HTTP/1.1" 200 -
+2025-07-06 14:35:18,257 - __main__ - INFO - Function execution requested
+2025-07-06 14:35:18,258 - __main__ - INFO - Executing function: expand_data with params: {}
+2025-07-06 14:35:18,258 - __main__ - INFO - Function expand_data executed successfully
+2025-07-06 14:35:18,258 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:18] "POST /api/execute HTTP/1.1" 200 -
+2025-07-06 14:35:24,228 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:24] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 14:35:24,228 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:24] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 14:35:24,490 - __main__ - INFO - Modules request
+2025-07-06 14:35:24,490 - __main__ - INFO - Returning 2 modules
+2025-07-06 14:35:24,490 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:24] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 14:35:24,535 - __main__ - INFO - Modules request
+2025-07-06 14:35:24,536 - __main__ - INFO - Returning 2 modules
+2025-07-06 14:35:24,536 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 14:35:24] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:03:13,588 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:03:13,588 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:03:13,857 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:03:13,857 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:03:13,857 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:03:13,857 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:03:13,967 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.94:5000
+2025-07-06 15:03:13,967 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 15:03:13,968 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 15:03:14,159 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:03:14,159 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:03:14,365 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:03:14,365 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:03:14,365 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:03:14,365 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:03:14,386 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 15:03:14,388 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 15:04:03,203 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gamar\\Downloads\\Ai\\Moduro\\app.py', reloading
+2025-07-06 15:04:03,226 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 15:04:03,398 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:04:03,398 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:04:03,602 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:04:03,602 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:04:03,602 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:04:03,602 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:04:03,625 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 15:04:03,627 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 15:04:22,581 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:04:22,582 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:04:22,787 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:04:22,787 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:04:22,787 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:04:22,787 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:04:22,813 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.94:5000
+2025-07-06 15:04:22,814 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 15:04:22,814 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 15:04:23,005 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:04:23,005 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:04:23,208 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:04:23,209 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:04:23,209 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:04:23,209 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:04:23,227 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 15:04:23,229 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 15:04:45,871 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:04:45] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:04:45,871 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:04:45] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:04:46,138 - __main__ - INFO - Modules request
+2025-07-06 15:04:46,139 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:04:46,139 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:04:46] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:04:46,185 - __main__ - INFO - Modules request
+2025-07-06 15:04:46,186 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:04:46,186 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:04:46] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:04:51,954 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:04:51] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:04:52,259 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:04:52] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:04:52,259 - __main__ - INFO - Modules request
+2025-07-06 15:04:52,259 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:04:52,259 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:04:52] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:04:52,574 - __main__ - INFO - Modules request
+2025-07-06 15:04:52,574 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:04:52,574 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:04:52] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:06:45,145 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:06:45] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:06:45,146 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:06:45] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:06:45,414 - __main__ - INFO - Modules request
+2025-07-06 15:06:45,414 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:06:45,414 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:06:45] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:06:45,461 - __main__ - INFO - Modules request
+2025-07-06 15:06:45,461 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:06:45,463 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:06:45] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:07:09,602 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:09] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:07:09,908 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:09] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:07:09,909 - __main__ - INFO - Modules request
+2025-07-06 15:07:09,909 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:07:09,910 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:09] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:07:10,219 - __main__ - INFO - Modules request
+2025-07-06 15:07:10,219 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:07:10,219 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:10] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:07:14,129 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:14] "OPTIONS /api/execute HTTP/1.1" 200 -
+2025-07-06 15:07:14,433 - __main__ - INFO - Function execution requested
+2025-07-06 15:07:14,433 - __main__ - INFO - Executing function: analyze_data with params: {}
+2025-07-06 15:07:14,434 - __main__ - INFO - Function analyze_data executed successfully
+2025-07-06 15:07:14,434 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:14] "POST /api/execute HTTP/1.1" 200 -
+2025-07-06 15:07:16,851 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:16] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:07:17,156 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:17] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:07:17,158 - __main__ - INFO - Modules request
+2025-07-06 15:07:17,158 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:07:17,159 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:17] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:07:17,470 - __main__ - INFO - Modules request
+2025-07-06 15:07:17,470 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:07:17,472 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:17] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:07:35,609 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:35] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:07:35,924 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:35] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:07:35,924 - __main__ - INFO - Modules request
+2025-07-06 15:07:35,924 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:07:35,925 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:35] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:07:36,239 - __main__ - INFO - Modules request
+2025-07-06 15:07:36,239 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:07:36,240 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:07:36] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:21:32,393 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:21:32,393 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:21:32,605 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:21:32,605 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:21:32,605 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:21:32,605 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:21:32,635 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.94:5000
+2025-07-06 15:21:32,635 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 15:21:32,636 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 15:21:32,813 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:21:32,813 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:21:33,027 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:21:33,028 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:21:33,028 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:21:33,028 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:21:33,051 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 15:21:33,053 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 15:21:35,796 - __main__ - INFO - Health check requested
+2025-07-06 15:21:35,797 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:21:35] "GET /api/health HTTP/1.1" 200 -
+2025-07-06 15:21:43,227 - __main__ - INFO - Serving index page
+2025-07-06 15:21:43,248 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:21:43] "GET / HTTP/1.1" 200 -
+2025-07-06 15:21:43,259 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 15:21:43,260 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-07-06 15:21:43,260 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:21:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-06 15:21:43,263 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/js/main.88a78bda.js
+2025-07-06 15:21:43,263 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:21:43] "[33mGET /static/js/main.88a78bda.js HTTP/1.1[0m" 404 -
+2025-07-06 15:21:43,420 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 15:21:43,420 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-07-06 15:21:43,421 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:21:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-06 15:21:43,423 - __main__ - INFO - Serving static file: logo192.png
+2025-07-06 15:21:43,425 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/logo192.png
+2025-07-06 15:21:43,425 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:21:43] "[33mGET /logo192.png HTTP/1.1[0m" 404 -
+2025-07-06 15:32:29,045 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:32:29,045 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:32:29,251 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:32:29,251 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:32:29,251 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:32:29,251 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:32:29,280 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.94:5000
+2025-07-06 15:32:29,280 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 15:32:29,281 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 15:32:29,452 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:32:29,452 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:32:29,660 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:32:29,660 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:32:29,660 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:32:29,660 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:32:29,682 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 15:32:29,684 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 15:32:49,136 - __main__ - INFO - Health check requested
+2025-07-06 15:32:49,136 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:32:49] "GET /api/health HTTP/1.1" 200 -
+2025-07-06 15:37:21,728 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:37:21,728 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:37:21,940 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:37:21,940 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:37:21,941 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:37:21,941 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:37:21,969 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.94:5000
+2025-07-06 15:37:21,969 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 15:37:21,970 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 15:37:22,141 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:37:22,141 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:37:22,350 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:37:22,351 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:37:22,351 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:37:22,351 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:37:22,372 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 15:37:22,374 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 15:37:44,429 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:37:44] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:37:44,430 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:37:44] "OPTIONS /api/modules HTTP/1.1" 200 -
+2025-07-06 15:37:44,695 - __main__ - INFO - Modules request
+2025-07-06 15:37:44,695 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:37:44,696 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:37:44] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:37:44,743 - __main__ - INFO - Modules request
+2025-07-06 15:37:44,743 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:37:44,743 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:37:44] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:37:45,673 - __main__ - INFO - Modules request
+2025-07-06 15:37:45,673 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:37:45,674 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:37:45] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:37:45,986 - __main__ - INFO - Modules request
+2025-07-06 15:37:45,988 - __main__ - INFO - Returning 2 modules
+2025-07-06 15:37:45,988 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:37:45] "GET /api/modules HTTP/1.1" 200 -
+2025-07-06 15:44:40,342 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:44:40,342 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:44:40,548 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:44:40,549 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:44:40,549 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:44:40,549 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:44:40,578 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.94:5000
+2025-07-06 15:44:40,578 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 15:44:40,578 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 15:44:40,759 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:44:40,759 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:44:40,970 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:44:40,971 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:44:40,971 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:44:40,971 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:44:40,992 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 15:44:40,993 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 15:49:24,493 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gamar\\Downloads\\Ai\\Moduro\\simple_api.py', reloading
+2025-07-06 15:49:24,520 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 15:49:24,691 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:49:24,692 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:49:24,899 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:49:24,899 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:49:24,899 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:49:24,899 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:49:24,920 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 15:49:24,922 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 15:49:42,360 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gamar\\Downloads\\Ai\\Moduro\\start_simple.py', reloading
+2025-07-06 15:49:42,420 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 15:49:42,592 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:49:42,592 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:49:42,797 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:49:42,797 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:49:42,797 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:49:42,797 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:49:42,818 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 15:49:42,820 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 15:49:48,449 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gamar\\AppData\\Roaming\\Python\\Python312\\site-packages\\flask\\config.py', reloading
+2025-07-06 15:49:48,474 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 15:49:48,670 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 15:49:48,670 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 15:49:48,883 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 15:49:48,883 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 15:49:48,883 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 15:49:48,883 - __main__ - INFO - Debug mode enabled
+2025-07-06 15:49:48,905 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 15:49:48,907 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 15:51:29,213 - __main__ - INFO - Serving static file: api/*
+2025-07-06 15:51:29,213 - __main__ - WARNING - 404 error: http://localhost:5000/api/*
+2025-07-06 15:51:29,213 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:51:29] "[33mGET /api/* HTTP/1.1[0m" 404 -
+2025-07-06 15:51:29,281 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 15:51:29,282 - __main__ - WARNING - 404 error: http://localhost:5000/favicon.ico
+2025-07-06 15:51:29,282 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:51:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-06 15:51:31,268 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 15:51:31,269 - __main__ - WARNING - 404 error: http://localhost:5000/favicon.ico
+2025-07-06 15:51:31,269 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:51:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-06 15:52:45,447 - __main__ - INFO - Serving index page
+2025-07-06 15:52:45,464 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:52:45] "[36mGET / HTTP/1.1[0m" 304 -
+2025-07-06 15:52:45,474 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 15:52:45,474 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-07-06 15:52:45,475 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:52:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-06 15:52:45,477 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/js/main.88a78bda.js
+2025-07-06 15:52:45,477 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:52:45] "[33mGET /static/js/main.88a78bda.js HTTP/1.1[0m" 404 -
+2025-07-06 15:52:45,517 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 15:52:45,517 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-07-06 15:52:45,517 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:52:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-06 15:52:45,524 - __main__ - INFO - Serving static file: logo192.png
+2025-07-06 15:52:45,524 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/logo192.png
+2025-07-06 15:52:45,524 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 15:52:45] "[33mGET /logo192.png HTTP/1.1[0m" 404 -
+2025-07-06 16:19:13,360 - __main__ - INFO - Health check requested
+2025-07-06 16:19:13,361 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 16:19:13] "GET /api/health HTTP/1.1" 200 -
+2025-07-06 16:21:10,642 - __main__ - INFO - Health check requested
+2025-07-06 16:21:10,644 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 16:21:10] "GET /api/health HTTP/1.1" 200 -
+2025-07-06 16:28:54,608 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 16:28:54,608 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 16:28:54,684 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 16:28:54,684 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 16:28:54,684 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 16:28:54,684 - __main__ - INFO - Debug mode enabled
+2025-07-06 16:28:54,700 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.94:5000
+2025-07-06 16:28:54,700 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 16:28:54,702 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 16:28:54,877 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 16:28:54,878 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 16:28:54,921 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 16:28:54,922 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 16:28:54,922 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 16:28:54,922 - __main__ - INFO - Debug mode enabled
+2025-07-06 16:28:54,930 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 16:28:54,933 - werkzeug - INFO -  * Debugger PIN: 116-646-529
+2025-07-06 16:32:48,455 - __main__ - INFO - Health check requested
+2025-07-06 16:32:48,455 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 16:32:48] "GET /api/health HTTP/1.1" 200 -
+2025-07-06 16:44:15,207 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 16:44:15,207 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 16:44:15,248 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 16:44:15,248 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 16:44:15,249 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 16:44:15,249 - __main__ - INFO - Debug mode enabled
+2025-07-06 16:44:15,266 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.94:5000
+2025-07-06 16:44:15,266 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 16:44:15,269 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 16:44:15,441 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 16:44:15,441 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 16:44:15,483 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 16:44:15,483 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 16:44:15,483 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 16:44:15,483 - __main__ - INFO - Debug mode enabled
+2025-07-06 16:44:15,492 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 16:44:15,495 - werkzeug - INFO -  * Debugger PIN: 116-646-529
+2025-07-06 16:45:17,200 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gamar\\Downloads\\Ai\\Moduro\\hyper_aggressive_automation.py', reloading
+2025-07-06 16:45:17,235 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 16:45:17,412 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 16:45:17,413 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 16:45:17,455 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 16:45:17,455 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 16:45:17,455 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 16:45:17,455 - __main__ - INFO - Debug mode enabled
+2025-07-06 16:45:17,463 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 16:45:17,467 - werkzeug - INFO -  * Debugger PIN: 116-646-529
+2025-07-06 16:45:17,787 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gamar\\Downloads\\Ai\\Moduro\\hyper_aggressive_automation.py', reloading
+2025-07-06 16:45:17,848 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 16:45:18,141 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 16:45:18,141 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 16:45:18,392 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 16:45:18,392 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 16:45:18,392 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 16:45:18,392 - __main__ - INFO - Debug mode enabled
+2025-07-06 16:45:18,413 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 16:45:18,415 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 16:46:21,165 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gamar\\Downloads\\Ai\\Moduro\\seo_ai_tool_backend.py', reloading
+2025-07-06 16:46:21,190 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 16:46:21,379 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 16:46:21,379 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 16:46:21,421 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 16:46:21,421 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 16:46:21,421 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 16:46:21,421 - __main__ - INFO - Debug mode enabled
+2025-07-06 16:46:21,429 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 16:46:21,432 - werkzeug - INFO -  * Debugger PIN: 116-646-529
+2025-07-06 16:46:21,708 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gamar\\Downloads\\Ai\\Moduro\\seo_ai_tool_backend.py', reloading
+2025-07-06 16:46:21,735 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 16:46:21,927 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 16:46:21,927 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 16:46:22,140 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 16:46:22,140 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 16:46:22,140 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 16:46:22,141 - __main__ - INFO - Debug mode enabled
+2025-07-06 16:46:22,162 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 16:46:22,163 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 16:50:38,984 - __main__ - INFO - Health check requested
+2025-07-06 16:50:38,984 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 16:50:38] "GET /api/health HTTP/1.1" 200 -
+2025-07-06 16:51:36,904 - __main__ - INFO - Serving index page
+2025-07-06 16:51:36,928 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 16:51:36] "GET / HTTP/1.1" 200 -
+2025-07-06 16:51:36,947 - __main__ - WARNING - 404 error: http://localhost:5000/static/js/main.ade439ca.js
+2025-07-06 16:51:36,948 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 16:51:36] "[33mGET /static/js/main.ade439ca.js HTTP/1.1[0m" 404 -
+2025-07-06 16:51:38,954 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 16:51:38,955 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 16:51:38] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-06 16:51:39,018 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 16:51:39,018 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 16:51:39,018 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 16:51:39] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-06 16:51:39,019 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 16:51:39] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-06 16:53:36,454 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 16:53:36,454 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 16:53:36,503 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 16:53:36,503 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 16:53:36,503 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 16:53:36,503 - __main__ - INFO - Debug mode enabled
+2025-07-06 16:53:36,518 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.94:5000
+2025-07-06 16:53:36,518 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 16:53:36,521 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 16:53:36,704 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 16:53:36,704 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 16:53:36,745 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 16:53:36,745 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 16:53:36,745 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 16:53:36,745 - __main__ - INFO - Debug mode enabled
+2025-07-06 16:53:36,755 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 16:53:36,758 - werkzeug - INFO -  * Debugger PIN: 116-646-529
+2025-07-06 17:01:54,110 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 17:01:54,111 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 17:01:54,153 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 17:01:54,153 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 17:01:54,153 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 17:01:54,153 - __main__ - INFO - Debug mode enabled
+2025-07-06 17:01:54,167 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.94:5000
+2025-07-06 17:01:54,167 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 17:01:54,169 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 17:01:54,332 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 17:01:54,332 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 17:01:54,371 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 17:01:54,371 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 17:01:54,371 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 17:01:54,371 - __main__ - INFO - Debug mode enabled
+2025-07-06 17:01:54,379 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 17:01:54,382 - werkzeug - INFO -  * Debugger PIN: 116-646-529
+2025-07-06 17:02:09,230 - __main__ - INFO - Health check requested
+2025-07-06 17:02:09,230 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 17:02:09] "GET /api/health HTTP/1.1" 200 -
+2025-07-06 17:02:36,658 - __main__ - INFO - Serving index page
+2025-07-06 17:02:36,659 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 17:02:36] "[36mGET / HTTP/1.1[0m" 304 -
+2025-07-06 17:02:36,672 - __main__ - WARNING - 404 error: http://localhost:5000/static/js/main.ade439ca.js
+2025-07-06 17:02:36,674 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 17:02:36] "[33mGET /static/js/main.ade439ca.js HTTP/1.1[0m" 404 -
+2025-07-06 17:02:38,694 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 17:02:38,694 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 17:02:38] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-06 17:02:38,741 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 17:02:38,741 - werkzeug - INFO - 127.0.0.1 - - [06/Jul/2025 17:02:38] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-06 17:03:00,417 - __main__ - INFO - Serving index page
+2025-07-06 17:03:00,418 - werkzeug - INFO - 192.168.1.94 - - [06/Jul/2025 17:03:00] "GET / HTTP/1.1" 200 -
+2025-07-06 17:03:00,452 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 17:03:00,452 - werkzeug - INFO - 192.168.1.94 - - [06/Jul/2025 17:03:00] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-06 17:03:00,460 - __main__ - WARNING - 404 error: http://192.168.1.94:5000/static/js/main.ade439ca.js
+2025-07-06 17:03:00,460 - werkzeug - INFO - 192.168.1.94 - - [06/Jul/2025 17:03:00] "[33mGET /static/js/main.ade439ca.js HTTP/1.1[0m" 404 -
+2025-07-06 17:03:00,599 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 17:03:00,599 - werkzeug - INFO - 192.168.1.94 - - [06/Jul/2025 17:03:00] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-06 17:03:00,629 - __main__ - INFO - Serving static file: favicon.ico
+2025-07-06 17:03:00,630 - werkzeug - INFO - 192.168.1.94 - - [06/Jul/2025 17:03:00] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-06 17:03:46,292 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gamar\\Downloads\\Ai\\Moduro\\seo_ai_tool_backend.py', reloading
+2025-07-06 17:03:46,315 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 17:03:46,491 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 17:03:46,491 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 17:03:46,531 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 17:03:46,532 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 17:03:46,532 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 17:03:46,532 - __main__ - INFO - Debug mode enabled
+2025-07-06 17:03:46,541 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 17:03:46,545 - werkzeug - INFO -  * Debugger PIN: 116-646-529
+2025-07-06 17:03:46,809 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gamar\\Downloads\\Ai\\Moduro\\seo_ai_tool_backend.py', reloading
+2025-07-06 17:03:46,842 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 17:03:47,012 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 17:03:47,012 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 17:03:47,133 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gamar\\Downloads\\Ai\\Moduro\\seo_ai_tool_backend.py', reloading
+2025-07-06 17:03:47,155 - werkzeug - INFO -  * Restarting with stat
+2025-07-06 17:03:47,220 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 17:03:47,220 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 17:03:47,220 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 17:03:47,221 - __main__ - INFO - Debug mode enabled
+2025-07-06 17:03:47,242 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 17:03:47,244 - werkzeug - INFO -  * Debugger PIN: 776-605-768
+2025-07-06 17:03:47,329 - __main__ - INFO - Moduro Flask application starting up
+2025-07-06 17:03:47,329 - __main__ - INFO - Initializing data stores and metrics
+2025-07-06 17:03:47,372 - __main__ - INFO - Starting Moduro Flask application
+2025-07-06 17:03:47,372 - __main__ - INFO - Server will be available at http://localhost:5000
+2025-07-06 17:03:47,372 - __main__ - INFO - Serving static files from frontend/build
+2025-07-06 17:03:47,373 - __main__ - INFO - Debug mode enabled
+2025-07-06 17:03:47,382 - werkzeug - WARNING -  * Debugger is active!
+2025-07-06 17:03:47,385 - werkzeug - INFO -  * Debugger PIN: 116-646-529
